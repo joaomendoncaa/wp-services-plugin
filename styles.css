@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wp-blue: #2271b1;
+    --wp-grey: #1d2327;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.sp_admin_main {
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+}
+
+.sp_admin_title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.sp_admin_nav {
+    margin: 4rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sp_admin_button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    border: 0;
+    background-color: var(--wp-grey);
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+    padding: 5rem 3rem 1rem 1rem;
+
+    border-radius: 10px;
+
+    margin: 0 0.5rem 0 0;
+}
+
+.sp_admin_button:hover {
+    background-color: var(--wp-blue);
+}
+
+.sp_admin_button:hover .sp_admin_button_icon_path {
+    fill: white;
+}
+
+.sp_admin_button > svg {
+    width: 20%;
+    height: 20%;
+    margin: 0 0 1rem 0;
+}
+
+.sp_admin_button_icon_path {
+    fill: #9ca2a7;
+}
